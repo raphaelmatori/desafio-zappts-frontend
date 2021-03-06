@@ -11,11 +11,12 @@ ngb-carousel {
 
   img {
     outline: none;
+    max-width: 85%;
   }
 
   .carousel-item {
     display: flex;
-    padding: 60px;
+    padding: 10%;
     flex-direction: column;
     opacity: 0;
     visibility: hidden;
@@ -29,10 +30,10 @@ ngb-carousel {
     font-family: "Muli Regular";
 
     h3 {
-      font-size: $carousel-title-text-size;
+      font-size: $subtitle-size;
     }
     p {
-      font-size: $carousel-description-text-size;
+      font-size: $paragraph-size;
     }
   }
 

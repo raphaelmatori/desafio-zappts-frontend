@@ -2,8 +2,8 @@
 //               ======= DEFAULT CONFIG =======
 // ========================================================
 
-* {
-  overflow-y: visible;
+html {
+  overflow-y: scroll !important;
 }
 
 // ========================================================
@@ -17,25 +17,29 @@
 // - Avenir Heavy
 @font-face {
   font-family: "Avenir Heavy";
-  src: url(assets/fonts/avenir-heavy.ttf) format("truetype");
+  src: url("assets/fonts/avenir-heavy.ttf") format("truetype");
+  font-weight: 900;
 }
 
 // - Lato Regular
 @font-face {
   font-family: "Lato Regular";
-  src: url(assets/fonts/lato-regular.ttf) format("truetype");
+  src: url("assets/fonts/lato-regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 // - Muli Regular
 @font-face {
   font-family: "Muli Regular";
-  src: url(assets/fonts/muli.ttf) format("truetype");
+  src: url("assets/fonts/muli.ttf") format("truetype");
+  font-weight: 400;
 }
 
 // - Muli Bold
 @font-face {
   font-family: "Muli Bold";
   src: url(assets/fonts/muli-bold.ttf) format("truetype");
+  font-weight: 900;
 }
 
 // ========================================================
