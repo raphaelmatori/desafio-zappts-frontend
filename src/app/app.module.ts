@@ -10,6 +10,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignInFormComponent } from './sign-in/sign-in-form/sign-in-form.component';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpFormComponent } from './sign-up/sign-up-form/sign-up-form.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     CarouselComponent,
     SignInComponent,
-    SignInFormComponent
+    SignUpComponent,
+    SignInFormComponent,
+    SignUpFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
