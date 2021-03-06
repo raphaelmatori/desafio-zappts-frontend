@@ -20,16 +20,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'desafio-zappts-frontend'`, () => {
+  it(`should have as title 'Welcome to Invision'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('desafio-zappts-frontend');
+    expect(app.title).toEqual('Welcome to Invision');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('desafio-zappts-frontend app is running!');
-  });
 });

@@ -1,0 +1,13 @@
+<div>
+    <ngb-carousel>
+        <ng-template ngbSlide class="carousel-inner" *ngFor="let carouselObj of carouselArray">
+            <div class="picsum-img-wrapper">
+                <img src="assets/images/chartImg.png" class="img-fluid">
+            </div>
+            <div class="carousel-text">
+                <h3>Marcenas mattis egestas {{carouselObj.id}}</h3>
+                <p>Erdum et malesuada fames ac ante ileum primmer in faucibus uspendisse porta.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>
