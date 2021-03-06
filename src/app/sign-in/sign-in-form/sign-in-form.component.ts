@@ -24,15 +24,14 @@ export class SignInFormComponent implements OnInit {
     ]);  
   }
   
-  matcher = new MyErrorStateMatcher();
+  matcher = new CustomErrorStateMatcher();
 
   ngOnInit(): void {
   }
 
 }
 
-/** Error when invalid control is dirty, touched, or submitted. */
-export class MyErrorStateMatcher implements ErrorStateMatcher {
+export class CustomErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
     const isSubmitted = form && form.submitted;
     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));

@@ -38,11 +38,23 @@
     border-radius: 60px;
   }
 
+  a {
+    font-family: "Muli Regular";
+    font-size: $small-size;
+    color: $light-brown;
+
+    &.createAccount {
+      color: $light-green;
+      text-decoration: underline;
+    }
+  }
+
   span {
     font-size: $small-size;
   }
 
   .line {
+    font-size: $small-size;
     font-family: "Muli Regular";
     width: 100%;
     text-align: center;

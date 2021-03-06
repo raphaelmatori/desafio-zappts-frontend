@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-end">
         <h1>Invision</h1>
     </div>
-    <div class="d-flex flex-column  mt-5">
+    <div class="d-flex flex-column  mt-3">
         <div class="d-flex justify-content-center">
             <h3>Welcome to Invision</h3>
         </div>
@@ -16,7 +16,7 @@
                         Please enter a valid email address
                     </mat-error>
                     <mat-error *ngIf="emailFormControl.hasError('required')">
-                        Email is <strong>required</strong>
+                        Email can not be <strong>empty</strong>
                     </mat-error>
                 </mat-form-field>
 
@@ -24,32 +24,37 @@
                     <mat-label>Password</mat-label>
                     <input type="password" matInput [formControl]="passwordFormControl" placeholder="*****">
                     <mat-error *ngIf="emailFormControl.hasError('required')">
-                        Password is <strong>required</strong>
+                        Password can not be <strong>empty</strong>
                     </mat-error>
                 </mat-form-field>
-            </form>
-            <div class="d-flex col-12 justify-content-center">
-                <div class="w-75 text-right">
-                    <span>Forgot password?</span>
-                </div>
-            </div>
-
-            <div class="d-flex flex-column col-12 align-items-center mt-3">
-                <button class="signIn-button">Sign in</button>
-
-                <div class="d-flex flex-row mt-3 w-50">
-                    <div class="line">
-                        <span>Or</span>
+            
+                <div class="d-flex col-12 justify-content-center">
+                    <div class="w-75 text-right">
+                        <a href="#">Forgot password?</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="d-flex flex-column col-12 align-items-center mt-3">
-                <button class="google-button">
-                    <img src="assets/images/google.svg" class="mr-3"/>
-                    Sign with Google
-                </button>
-            </div>
+                <div class="d-flex flex-column col-12 align-items-center mt-3">
+                    <button type="submit" class="signIn-button">Sign in</button>
+
+                    <div class="d-flex flex-row mt-3 mb-2 w-50">
+                        <div class="line">
+                            <span>Or</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column col-12 align-items-center mt-3">
+                    <button class="google-button">
+                        <img src="assets/images/google.svg" class="mr-3"/>
+                        Sign with Google
+                    </button>
+                    
+                    <div class="mt-4">
+                        <span>New <b>Invision</b>? <a href="#" class="createAccount">Create Account</a></span>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
