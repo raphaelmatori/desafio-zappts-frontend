@@ -1,3 +1,5 @@
+@import "./app/shared/variables";
+
 // ========================================================
 //               ======= DEFAULT CONFIG =======
 // ========================================================
@@ -16,29 +18,29 @@ html {
 
 // - Avenir Heavy
 @font-face {
-  font-family: "Avenir Heavy";
+  font-family: $avenir-heavy;
   src: url("assets/fonts/avenir-heavy.ttf") format("truetype");
   font-weight: 900;
 }
 
 // - Lato Regular
 @font-face {
-  font-family: "Lato Regular";
+  font-family: $lato-regular;
   src: url("assets/fonts/lato-regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 // - Muli Regular
 @font-face {
-  font-family: "Muli Regular";
+  font-family: $muli-regular;
   src: url("assets/fonts/muli.ttf") format("truetype");
   font-weight: 400;
 }
 
 // - Muli Bold
 @font-face {
-  font-family: "Muli Bold";
-  src: url(assets/fonts/muli-bold.ttf) format("truetype");
+  font-family: $muli-bold;
+  src: url("assets/fonts/muli-bold.ttf") format("truetype");
   font-weight: 900;
 }
 

@@ -57,7 +57,7 @@ describe('SignInFormComponent', () => {
   });
 
   it('should have a sign in button', () => {
-    let button = fixture.debugElement.query(By.css('button[type="submit"].signIn-button')).nativeElement;
+    let button = fixture.debugElement.query(By.css('button[type="submit"].sign-button')).nativeElement;
     expect(button).toBeTruthy();
   });
 

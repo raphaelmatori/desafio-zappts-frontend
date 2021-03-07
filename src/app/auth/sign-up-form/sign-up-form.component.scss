@@ -1,67 +1,8 @@
-@import "../../shared/~variables.scss";
+@import "../../shared/variables";
 
-.signUpForm-wrapper {
-  h1 {
-    font-size: $title-size;
-    font-family: "Avenir Heavy";
-  }
-
-  h3 {
-    font-size: $subtitle-size;
-    font-family: "Muli Regular";
-    color: $light-brown;
-  }
-
-  mat-label,
-  input {
-    padding: 0 20px;
-  }
-
-  .signUp-button {
-    width: 175px;
-    height: 45px;
-    font-size: $btn-medium;
-    background-color: $light-brown;
-    color: $white;
-    border: 0;
-    border-radius: 60px;
-  }
-
-  .google-button {
-    font-family: "Lato Regular";
-    font-size: $btn-large;
-    width: 263px;
-    height: 45px;
-    border: 0;
-    background-color: $white;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 60px;
-  }
-
+.form-wrapper {
   a {
-    font-family: "Muli Regular";
-    font-size: $small-size;
-    color: $light-brown;
     color: $light-green;
     text-decoration: underline;
-  }
-
-  span {
-    font-size: $small-size;
-  }
-
-  .line {
-    font-size: $small-size;
-    font-family: "Muli Regular";
-    width: 100%;
-    text-align: center;
-    border-bottom: 0.5px solid $light-brown;
-    line-height: 0.1em;
-    margin: 10px 0 20px;
-
-    span {
-      background: $white;
-      padding: 0 10px;
-    }
   }
 }

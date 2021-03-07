@@ -1,4 +1,4 @@
-@import "../../shared/~variables.scss";
+@import "../../shared/variables";
 
 ngb-carousel {
   background-color: $light-green;
@@ -27,7 +27,7 @@ ngb-carousel {
   .carousel-text {
     color: $white;
     margin-top: 10px;
-    font-family: "Muli Regular";
+    font-family: $muli-regular;
 
     h3 {
       font-size: $subtitle-size;
