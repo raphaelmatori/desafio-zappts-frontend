@@ -37,6 +37,11 @@ export class SignInFormComponent implements OnInit {
     });
   }
 
+  onSignInSubmit(): void {
+    //TODO: implement sign in
+    console.log("Sign in was called");
+  }
+
   signInWithGoogle(): void {
     this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
   }

@@ -2,11 +2,11 @@
     <ngb-carousel>
         <ng-template ngbSlide class="carousel-inner" *ngFor="let carouselObj of carouselArray">
             <div class="picsum-img-wrapper">
-                <img src="{{carouselObj.imagePath}}">
+                <img class="js-carouselImg" src="{{carouselObj.imagePath}}">
             </div>
             <div class="carousel-text">
-                <h3>{{carouselObj.title}}</h3>
-                <p>{{carouselObj.description}}</p>
+                <h3 class="js-carouselTitle">{{carouselObj.title}}</h3>
+                <p class="js-carouselDescription">{{carouselObj.description}}</p>
             </div>
         </ng-template>
     </ngb-carousel>
