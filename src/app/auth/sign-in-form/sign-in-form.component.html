@@ -9,7 +9,7 @@
         <div class="row mt-5">
             <form class="w-100 text-center">
                 <mat-form-field class="w-75">
-                    <mat-label>Users name or Email</mat-label>
+                    <mat-label>Email</mat-label>
                     <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                         placeholder="Ex. example@invision.com">
                     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
@@ -36,25 +36,26 @@
 
                 <div class="d-flex flex-column col-12 align-items-center mt-3">
                     <button type="submit" class="signIn-button">Sign in</button>
-
-                    <div class="d-flex flex-row mt-3 mb-2 w-50">
-                        <div class="line">
-                            <span>Or</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column col-12 align-items-center mt-3">
-                    <button class="google-button">
-                        <img src="assets/images/google.svg" class="mr-3"/>
-                        Sign in with Google
-                    </button>
-                    
-                    <div class="mt-4">
-                        <span>New <b>Invision</b>? <a routerLink="/auth/sign-up" class="createAccount">Create Account</a></span>
-                    </div>
                 </div>
             </form>
+
+            <div class="d-flex flex-column col-12 align-items-center mt-3">
+            
+                <div class="d-flex flex-row mt-3 mb-2 w-50">
+                    <div class="line">
+                        <span>Or</span>
+                    </div>
+                </div>
+            
+                <button class="google-button" (click)="signInWithGoogle()">
+                    <img src="assets/images/google.svg" class="mr-3" />
+                    Sign in with Google
+                </button>
+            
+                <div class="mt-4">
+                    <span>New <b>Invision</b>? <a routerLink="/auth/sign-up" class="createAccount">Create Account</a></span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

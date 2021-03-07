@@ -19,7 +19,7 @@
                 </mat-form-field>
                 
                 <mat-form-field class="w-75">
-                    <mat-label>Users name or Email</mat-label>
+                    <mat-label>Email</mat-label>
                     <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                         placeholder="Ex. example@invision.com">
                     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
@@ -32,7 +32,7 @@
 
                 <mat-form-field class="w-75">
                     <mat-label>Password</mat-label>
-                    <input type="password" matInput [formControl]="passwordFormControl" placeholder="*****" [errorStateMatcher]="matcher">
+                    <input #password type="password" matInput [formControl]="passwordFormControl" placeholder="*****" [errorStateMatcher]="matcher">
                     <mat-error *ngIf="passwordFormControl.hasError('minlength') && !passwordFormControl.hasError('required')">
                         Password length must be at least 6
                     </mat-error>
@@ -43,30 +43,31 @@
             
                 <div class="d-flex flex-column col-12 align-items-center mt-3">
                     <button type="submit" class="signUp-button">Sign up</button>
-
-                    <div class="d-flex flex-row mt-3 mb-2 w-50">
-                        <div class="line">
-                            <span>Or</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column col-12 align-items-center mt-3">
-                    <button class="google-button">
-                        <img src="assets/images/google.svg" class="mr-3"/>
-                        Sign up with Google
-                    </button>
-                    
-                    <div class="mt-4">
-                        <span>By signing up, you agree to <b>Invision</b><br />
-                        <a href="#">Terms of Conditions</a> and <a href="#">Privacy Policy</a></span>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <span>Already on <b>Invision</b>? <a routerLink="/auth/sign-in">Log in</a></span>
-                    </div>
                 </div>
             </form>
+            
+            <div class="d-flex flex-column col-12 align-items-center mt-3">
+                <div class="d-flex flex-row mt-3 mb-2 w-50">
+                    <div class="line">
+                        <span>Or</span>
+                    </div>
+                </div>
+
+                <button class="google-button" (click)="signUpWithGoogle()">
+                    <img src="assets/images/google.svg" class="mr-3" />
+                    Sign up with Google
+                </button>
+            
+                <div class="mt-4">
+                    <span>By signing up, you agree to <b>Invision</b><br />
+                        <a href="#">Terms of Conditions</a> and <a href="#">Privacy Policy</a></span>
+                </div>
+            
+                <div class="mt-4">
+                    <span>Already on <b>Invision</b>? <a routerLink="/auth/sign-in">Log in</a></span>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
