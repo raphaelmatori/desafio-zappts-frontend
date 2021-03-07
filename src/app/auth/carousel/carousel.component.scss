@@ -6,7 +6,6 @@ ngb-carousel {
   text-align: center;
   overflow: visible;
   width: 100%;
-  height: 100vh;
   display: inline-table !important;
 
   img {
@@ -65,5 +64,11 @@ ngb-carousel {
         border: 0;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  ngb-carousel {
+    height: 100vh;
   }
 }
